@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Report Lost Item - Lost & Found</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        <h2>🔍 Lost & Found</h2>
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="profile.php">
+            Profile
+        </a>
+
+        <a href="found.html">
+            Report Found
+        </a>
+
+        <a href="backend/logout.php">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="form-section">
+
+        <h1>🔴 Report Lost Item</h1>
+
+        <p>
+            Enter the information about your lost item.
+        </p>
+
+
+        <form
+    action="backend/report_lost.php"
+    method="POST"
+    enctype="multipart/form-data"
+>
+
+
+            <label for="item_name">
+                Item Name
+            </label>
+
+            <input
+                type="text"
+                id="item_name"
+                name="item_name"
+                placeholder="Example: iPhone 15"
+                required
+            >
+
+
+            <label for="category">
+                Category
+            </label>
+
+            <select
+                id="category"
+                name="category"
+                required
+            >
+
+                <option value="">
+                    Select category
+                </option>
+
+                <option value="Phone">
+                    Phone
+                </option>
+
+                <option value="Laptop">
+                    Laptop
+                </option>
+
+                <option value="Wallet">
+                    Wallet
+                </option>
+
+                <option value="Bag">
+                    Bag
+                </option>
+
+                <option value="ID Card">
+                    ID Card
+                </option>
+
+                <option value="Keys">
+                    Keys
+                </option>
+
+                <option value="Other">
+                    Other
+                </option>
+
+            </select>
+
+
+            <label for="description">
+                Description
+            </label>
+
+            <textarea
+                id="description"
+                name="description"
+                rows="5"
+                placeholder="Describe the item, color, model, special marks, etc."
+                required
+            ></textarea>
+
+
+            <label for="lost_location">
+                Where did you lose it?
+            </label>
+
+            <input
+                type="text"
+                id="lost_location"
+                name="lost_location"
+                placeholder="Example: Wolkite University"
+                required
+            >
+
+
+            <label for="lost_date">
+                Date Lost
+            </label>
+
+            <input
+                type="date"
+                id="lost_date"
+                name="lost_date"
+                required
+            >
+
+
+            <label for="contact_phone">
+                Contact Phone
+            </label>
+
+            <input
+                type="tel"
+                id="contact_phone"
+                name="contact_phone"
+                placeholder="09XXXXXXXX"
+                required
+            >
+          <label for="image">
+    Photo of Lost Item
+</label>
+
+<input
+    type="file"
+    id="image"
+    name="image"
+    accept="image/jpeg,image/png,image/webp"
+    required
+>
+
+<small>
+    Upload JPG, PNG or WEBP image.
+</small>
+
+            <button
+                type="submit"
+                name="report_lost"
+            >
+                Report Lost Item
+            </button>
+
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Lost & Found Management System
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

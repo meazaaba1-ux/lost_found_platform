@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account - Lost & Found</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h2>🔍 Lost & Found</h2>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Sign In</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="form-section">
+
+        <h1>Create Account</h1>
+
+        <p>Create your Lost & Found account</p>
+
+
+        <form action="backend/register.php" method="POST">
+
+            <label for="full_name">Full Name</label>
+
+            <input
+                type="text"
+                id="full_name"
+                name="full_name"
+                placeholder="Enter your full name"
+                required
+            >
+
+
+            <label for="username">Username</label>
+
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Choose a username"
+                required
+            >
+
+
+            <label for="email">Email</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label for="phone">Phone Number</label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+
+            <label for="password">Password</label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create password"
+                required
+            >
+
+
+            <label for="confirm_password">Confirm Password</label>
+
+            <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                placeholder="Confirm password"
+                required
+            >
+
+
+            <button type="submit" name="register">
+                Create Account
+            </button>
+
+        </form>
+
+
+        <p>
+            Already have an account?
+            <a href="login.html">Sign In</a>
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Lost & Found Management System</p>
+
+</footer>
+
+</body>
+
+</html>

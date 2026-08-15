@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sign In - Lost & Found</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h2>🔍 Lost & Found</h2>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Sign Up</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="form-section">
+
+        <h1>Welcome Back!</h1>
+
+        <p>Sign in to your Lost & Found account</p>
+
+
+        <form action="backend/login.php" method="POST">
+
+            <label for="username">
+                Username
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                required
+            >
+
+
+            <label for="password">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+            >
+
+
+            <button type="submit" name="login">
+                Sign In
+            </button>
+
+        </form>
+
+
+        <p>
+            Don't have an account?
+
+            <a href="register.html">
+                Create Account
+            </a>
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Lost & Found Management System
+    </p>
+
+</footer>
+
+</body>
+
+</html>
